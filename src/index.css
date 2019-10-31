@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card {
+  margin: 20px;
+}
+.card tr td {
+  padding: 7px 10px !important;
+}
+
+.card tr td input,
+.card tr td button {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.card tr:first-child td {
+  font-size: 22px;
+}

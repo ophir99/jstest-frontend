@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 0 20px;
+}
+
+.grid:first-child > div {
+  background-color: rgb(207, 207, 207);
+}
+
+.grid > div {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+.grid > div:last-child {
+  border-right-width: 1px;
+}
+
+.grid:last-child > div {
+  border-bottom-width: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  .grid > div {
+    font-size: 12px;
+  }
+}
